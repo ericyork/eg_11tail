@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "compile": "npx tailwindcss -i ./src/input.css -o ./_site/output.css --watch",
-    "start": "eleventy --serve",
-    "full": "npx tailwindcss -i ./src/input.css -o ./_site/output.css --watch && eleventy --serve",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "eleventy --serve"
   },
   "keywords": [],
   "author": "",
