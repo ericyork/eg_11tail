@@ -5,13 +5,12 @@ A scaffolded starter repo for the [11ty](https://www.11ty.dev/) static site gene
 Both 11ty and TailwindCSS require [node.js](https://nodejs.org) version 14 or higher
 
 ## Usage
-  1. Download (or clone) the repo
-  2. In your terminal, ```cd``` to the repo directory 
-  3. run ```npm install```
-  4. Run ```npm run compile``` 
-  5. Open a second terminal session and run ```npm run start``` 
-  6. Visit the URL shown in the terminal (probably localhost:8080)
-  7. The contents of ```/_site``` are ready for deployment
+  1. Download (or clone) the repo and, in your terminal, ```cd``` to the repo directory 
+  2. Run ```npm install``` (and wait for dependencies to download)
+  3. Run ```npm run compile``` 
+  4. Open a second terminal session and run ```npm run start``` 
+  5. Visit the URL shown in the terminal (probably localhost:8080)
+  6. The contents of ```/_site``` are ready for deployment
 
 ## Summary and Notes
 Files in the ```/src``` directory are processed by 11ty and Tailwindcss and output to ```/_site```, which is the build directory. These are specified in the following config files: ```/tailwind.config.js```, ```/.eleventy.js```, and in the "compile" script in ```/package.json```.
