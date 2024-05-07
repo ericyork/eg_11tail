@@ -1,18 +1,26 @@
 # eg_11tail
-A scaffolded starter repo for the [11ty](https://www.11ty.dev/) static site generator (SSG), with [TailwindCSS](https://tailwindcss.com/installation) and [DaisyUI](https://daisyui.com/) for interface styles and components. 
+A scaffolded starter repo for the [11ty](https://www.11ty.dev/) static site generator (SSG), with [TailwindCSS](https://tailwindcss.com/installation) and [DaisyUI](https://daisyui.com/) for interface styles and components.
+
+## Requirements
+Both 11ty and TailwindCSS require node.js version 14 or higher
 
 ## Usage
-  1. Download/clone the repo
-  2. In your terminal, change your working directory to the repo's and run ```npm install``` (to download the package dependencies and create an up-to-date ```package-lock.json``` file).
-  3. Run ```npm run compile``` to issue the tailwindcss build command. 
-  4. Open a second terminal session and run ```npm run start``` to run the eleventy build and start the development server
-  5. Visit the URL shown in the terminal (probably localhost:8080)
-  6. The contents of ```_site``` can be deployed
+  1. Download (or clone) the repo
+  2. In your terminal, ```cd``` to the repo directory 
+  3. run ```npm install```
+  4. Run ```npm run compile``` 
+  5. Open a second terminal session and run ```npm run start``` 
+  6. Visit the URL shown in the terminal (probably localhost:8080)
+  7. The contents of ```/_site``` are ready for deployment
 
 ## Summary and Notes
-Files in the ```/src``` directory are processed by 11ty and Tailwindcss and output to ```/_site```, which is the build directory. These are specified in the following config files: ```tailwind.config.js```, ```.eleventy.js```, and in the "compile" script in ```package.json```.
+Files in the ```/src``` directory are processed by 11ty and Tailwindcss and output to ```/_site```, which is the build directory. These are specified in the following config files: ```/tailwind.config.js```, ```/.eleventy.js```, and in the "compile" script in ```/package.json```.
 
-The theme is controlled by DaisyUI and is set inside ```tailwind.config.js```; see [https://daisyui.com/docs/themes/](https://daisyui.com/docs/themes/) for instructions. 
+Because the contents of ```node_modules``` are excluded by ```.gitignore```, you will need to use ```npm install``` the first time you download the repo in order to add all the core packages and their dependencies, and to generate an updated ```package-lock.json```.
+
+The scripts, ```npm run compile``` and ```npm run start```, are defined in ```/package.json``` and are comprised of the default tailwind and eleventy commands. If you add a new script, you'll need to rebuild ```package-lock.json``` with npm.
+
+The site theme is controlled by DaisyUI and is set inside ```tailwind.config.js```; see [https://daisyui.com/docs/themes/](https://daisyui.com/docs/themes/) for instructions. It's currently set to Retro for light and Coffee for dark, in hopes you will change them ;) The site is already set up with the typography plugin, as well as postcss.
 
 The eleventy config, ```.eleventy.js``` specifies html, markdown, and nunjucks as templating files, and adds ```/src/assets``` and ```/src/css``` as pass throughs; see [https://www.11ty.dev/docs/copy/](https://www.11ty.dev/docs/copy/) for more information on this important function.
 
