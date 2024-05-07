@@ -2,7 +2,7 @@
 A scaffolded starter repo for the [11ty](https://www.11ty.dev/) static site generator (SSG), with [TailwindCSS](https://tailwindcss.com/installation) and [DaisyUI](https://daisyui.com/) for interface styles and components.
 
 ## Requirements
-Both 11ty and TailwindCSS require [node.js](https://nodejs.org) version 14 or higher
+Both 11ty and TailwindCSS require [node.js](https://nodejs.org) version 14 or higher. You can check this in your terminal by running ```node --version```. Additionally, you'll need at least basic knowledge of how to use a terminal, of node and npm, and of HTML, CSS, and JS. Knowledge of markdown and nunjucks is also useful. 
 
 ## Usage
   1. Download (or clone) the repo and, in your terminal, ```cd``` to the repo directory 
