@@ -3,8 +3,8 @@ A scaffolded starter repo for the [11ty](https://www.11ty.dev/) static site gene
 
 ## Usage
   1. Download/clone the repo
-  2. In your terminal, change your working directory to the repo's and run ```npm install``` to build out the dependencies and create an up-to-date ```package-lock.json``` file.
-  3. Run ```npm run compile``` to issue the tailwindcss build command. (Note that this specifies the input and output directories for the CSS.)
+  2. In your terminal, change your working directory to the repo's and run ```npm install``` (to download the package dependencies and create an up-to-date ```package-lock.json``` file).
+  3. Run ```npm run compile``` to issue the tailwindcss build command. 
   4. Open a second terminal session and run ```npm run start``` to run the eleventy build and start the development server
   5. Visit the URL shown in the terminal (probably localhost:8080)
   6. The contents of ```_site``` can be deployed
@@ -22,4 +22,4 @@ If you want to deploy this to a public server, simply copy the contents of ```_s
 
 Both eleventy and tailwind are watching for changes to your files (with the --serve and --watch flags in ther respective commands), so you should be able to 'hotload' edits in the browser (i.e. see them as you make them) out of the box. your terminal sessions and rerun the ```npm``` commands in new sessions.
 
-It should go without saying, but further additions, such as other pages, a different folder structure, etc., may neccessitate changes to the paths in the various config files to tell 11ty and Tailwind where to be looking for templates and CSS classes.
+It should go without saying, but further additions, such as other pages, a different folder structure, etc., may neccessitate changes to the paths in the various config files to tell 11ty and Tailwind where to be looking for templates and CSS classes. The compile command in particular needs to specify the correct input and output files.
